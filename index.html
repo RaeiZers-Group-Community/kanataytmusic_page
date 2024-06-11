@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="assets/css/style.css" />
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
     <link rel="stylesheet" href="https://unpkg.com/tippy.js@6/animations/scale.css" />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdn.jsdelivr.net/npm/file-downloader@2.1.0/file-downloader.min.js"></script>
     <script type='text/javascript' src='https://cdn.prinsh.com/NathanPrinsley-effect/efek-salju.js'></script>
     
     <link
@@ -316,25 +318,26 @@
           <p class="subtitle mt-3 has-text-gray">
             Download <span class="blurple">[Kanata Ytmusic]</span> according to the operating system used
           </p>
-          <a href="https://www.mediafire.com/file/ka4sh5xsmrgr0r2/Kanata+Client+YTMusic-Setup-3.1.1-LUANYAR.exe/file" class="button is-blurple is-medium"
-            ><strong><i class="fa-solid fa-download"></i> Win x64 - x32bit</strong></a
+          <a onclick="showPopup()" class="button is-blurple is-medium"
+            ><strong><i class="fa-solid fa-download"></i> Choose Version</strong></a
+          >
+          <!-- <div>
+            <br>
+          </div>
+          <a onclick="showPopup()" class="button is-blurple is-medium"
+            ><strong><i class="fa-solid fa-download"></i> Linux .appImage/.deb</strong></a
           >
           <div>
             <br>
           </div>
-          <a href="#" class="button is-blurple is-medium"
-            ><strong><i class="fa-solid fa-download"></i> Linux .appImage/.snap (ComingSoon)</strong></a
-          >
-          <div>
-            <br>
-          </div>
-          <a href="#" class="button is-blurple is-medium"
-            ><strong><i class="fa-solid fa-download"></i> Mac OS intel/arm (ComingSoon)</strong></a
-          >
+          <a onclick="comingsoon()" class="button is-blurple is-medium"
+            ><strong><i class="fa-solid fa-download"></i> Mac OS intel/arm</strong></a
+          > -->
         </div>
 
         <div class="column"></div>
       </div>
+      
     </section>
     <!-- Invite Section End -->
     <!-- Footer Section Start -->
@@ -378,6 +381,7 @@
     <script src="https://unpkg.com/@popperjs/core@2"></script>
     <script src="https://unpkg.com/tippy.js@6"></script>
     <script src="assets/js/script.js"></script>
+    <script src="assets/js/popup.js"></script>
     <script src="assets/js/hide.js"></script>
   </body>
 </html>
